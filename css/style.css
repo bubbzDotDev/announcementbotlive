@@ -153,6 +153,14 @@ section {
     text-align: center;
 }
 
+#twitter {
+    text-align: center;
+}
+
+#twitter img {
+    width: 75px;
+}
+
 #footer {
     height: 85px;
     background-color: #F78620;
