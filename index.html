@@ -3,71 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/index.js"></script>
+    <meta name="description" content="Announcement Bot: Create custom embedded messages on Discord today!">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> 
     <title>Announcement Bot | A bot for Discord!</title>
 </head>
 <body>
-    <div id="window">
+    <header id="top">
         <div class="slider" id="small-image">
-            <img src="./images/banner_addme_sm.png" alt="">
-            <img src="./images/banner_custom_sm.png" alt="">
-            <img src="./images/banner_replace_sm.png" alt="">
-            <img src="./images/banner_normal_sm.png" alt="">
+            <img src="./images/banner_addme_sm.png" alt="Banner image for slider">
+            <img src="./images/banner_custom_sm.png" alt="Banner image for slider">
+            <img src="./images/banner_replace_sm.png" alt="Banner image for slider">
+            <img src="./images/banner_normal_sm.png" alt="Banner image for slider">
         </div>
         <div class="slider" id="medium-image">
-            <img src="./images/banner_addme_md.png" alt="">
-            <img src="./images/banner_custom_md.png" alt="">
-            <img src="./images/banner_replace_md.png" alt="">
-            <img src="./images/banner_normal_md.png" alt="">
+            <img src="./images/banner_addme_md.png" alt="Banner image for slider">
+            <img src="./images/banner_custom_md.png" alt="Banner image for slider">
+            <img src="./images/banner_replace_md.png" alt="Banner image for slider">
+            <img src="./images/banner_normal_md.png" alt="Banner image for slider">
         </div>
         <div class="slider" id="large-image">
-            <img src="./images/banner_addme.png" alt="">
-            <img src="./images/banner_custom.png" alt="">
-            <img src="./images/banner_replace.png" alt="">
-            <img src="./images/banner_normal.png" alt="">
+            <img src="./images/banner_addme.png" alt="Banner image for slider">
+            <img src="./images/banner_custom.png" alt="Banner image for slider">
+            <img src="./images/banner_replace.png" alt="Banner image for slider">
+            <img src="./images/banner_normal.png" alt="Banner image for slider">
         </div>
-    </div>
-    <div id="main">
-        <div id="nav">
-            <h1 style="padding-top: 4px;">Announcement Bot</h1>
-            <h3><a href="commands/">&gt;Commands&lt;</a></h3>
-        </div>
-        <p>
-        <img id="bot" src="./images/bent-hd.png" alt="An image of Announcement Bot.">
-        </p>
+    </header>
+    <nav>
+        <p><a href="#commands">&gt; Commands &lt;</a></p>
+    </nav>
+    <main class="home">
+        <h1>Announcement Bot</h1>
 
-        <p class="button"><a href="https://discord.com/api/oauth2/authorize?client_id=725281264411869244&permissions=519232&scope=bot" target="_blank"><img src="./images/button_invite.png" alt=""></a><br>Invite Announcement Bot to your server!</p>
-        <br>
-        <p class="button"><a href="https://discord.gg/bMjyskS" target="_blank"><img src="./images/button_support.png" alt=""></a><br>Visit our Discord support server!</p>
-        <br>
-        <p class="button"><a href="https://www.patreon.com/announcementbot" target="_blank"><img src="./images/button_donate.png" alt=""></a><br>Support us via Patreon!</p>
+        <img class="bot" src="./images/bot_bent200x237.png" alt="An image of Announcement Bot." width="200" height="237" loading="lazy">
 
-        <br><br>
-        <h2>About:</h2>
-        <br>
-        <p>Announcement Bot allows you to create custom embedded messages with an updating preview of your announcement. It lets you replace existing messages to change outdated content without having to delete and repost. It also supports normal non-embedded announcements for when using an embed is not desired.</p>
-    
-        <br><br>
+        <section class="about dashed-rounded">
+            <h2>About</h2>
+            <p>
+                Announcement Bot allows server managers create custom embedded 
+                messages with an updating preview of their announcement. 
+                It lets them replace existing messages to change outdated 
+                content without having to delete and repost. It also supports 
+                normal non-embedded announcements.
+            </p>
+        </section>
+
+        <figure class="button">
+            <a rel="noopener" href="https://discord.com/api/oauth2/authorize?client_id=725281264411869244&permissions=519232&scope=bot" target="_blank"><img src="./images/button_invite.png" alt="Invite button" width="340" height="73" loading="lazy"></a>
+            <figcaption>Invite Announcement Bot to your server!</figcaption>
+        </figure>
+        <figure class="button">
+            <a rel="noopener" href="https://discord.gg/bMjyskS" target="_blank"><img src="./images/button_support.png" alt="Support button" width="340" height="73" loading="lazy"></a>
+            <figcaption>Visit our Discord support server!</figcaption>
+        </figure>
+        <figure class="button">
+            <a rel="noopener" href="https://www.patreon.com/announcementbot" target="_blank"><img src="./images/button_donate.png" alt="Donate button" width="340" height="73" loading="lazy"></a>
+            <figcaption>Support us via Patreon!</figcaption>
+        </figure>
+
+        <section id="commands" class="commands dashed-rounded">
+            <h2>Commands</h2>
+            <h3>Available to anyone:</h3>
+            <ul>
+                <li><strong>a!</strong>help – Displays the help menu</li>
+                <li><strong>a!</strong>info - Provides general bot info</li>
+                <li><strong>a!</strong>hello – Responds with “Hello!”</li>
+                <li><strong>a!</strong>ping – Responds with “pong!”</li>
+            </ul>
+
+            <h3>Must have Manage Server permissions:</h3>
+            <ul>
+                <li><strong>a!</strong>embed new – Creates a new embedded message</li>
+                <li><strong>a!</strong>embed replace – Replaces an existing message with an embedded message</li>
+                <li><strong>a!</strong>noembed new – Creates a new regular message</li>
+                <li><strong>a!</strong>noembed replace – Replaces an existing message with a regular message</li>
+            </ul>
+        </section>
+        
+        <h2>Vote</h2>
         <p id="bfd">
-        <a href="https://botsfordiscord.com/bots/725281264411869244" target="_blank">
-            <img src="https://botsfordiscord.com/api/bot/725281264411869244/widget" title="Visit Announcement listed on Bots for Discord!" alt="Announcement's Widget Failed to Load" />
-        </a>
+            <a rel="noopener" href="https://botsfordiscord.com/bots/725281264411869244" target="_blank"><img src="https://botsfordiscord.com/api/bot/725281264411869244/widget" title="Visit Announcement listed on Bots for Discord!" alt="Announcement's Widget Failed to Load" loading="lazy" /></a>
         </p>
-        <br><br>
-        <div id="twitter">
-            <a href="https://twitter.com/embedondiscord" target="_blank"><img src="/images/twitter_logo_blue.png" alt="Twitter Logo"></a>
+
+        <section class="video dashed-rounded">
+            <h2>See it in action!</h2>
+            <iframe title="Announcement Bot Demonstration" src="https://player.vimeo.com/video/445335788" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <div class="twitter">
+            <a rel="noopener" href="https://twitter.com/embedondiscord" target="_blank"><img src="/images/twitter_logo_blue.png" alt="Twitter Logo" loading="lazy" width="75" height="75"></a>
         </div>
-        <br><br>
-    </div>
+
+        <p><a href="#top">Back to top</a></p>
+    </main>
     <footer>
-        <div id="footer">
-            <a href="https://www.bubeez.dev" target="_blank"><img src="./images/logo_blue.png" alt="bubeez development logo"></a>
-        </div>
+        <a rel="noopener" href="https://www.bubeez.dev" target="_blank"><img src="./images/logo_sm_wht_new.png" alt="bubeez development logo" loading="lazy" width="65" height="65"></a>
     </footer>
 </body>
 </html>
