@@ -205,12 +205,6 @@ footer img {
     width: auto;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 80px;
-    min-height: 100vh;
-}
-
 .dashed-rounded {
     border: 3px dashed var(--primary);
     border-radius: 15px;
