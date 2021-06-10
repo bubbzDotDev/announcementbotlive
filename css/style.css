@@ -209,3 +209,11 @@ footer img {
     border: 3px dashed var(--primary);
     border-radius: 15px;
 }
+
+.subheading a {
+    text-decoration: underline;
+}
+
+.subheading a:hover {
+    text-decoration: none;
+}
