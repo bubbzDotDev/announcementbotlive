@@ -90,10 +90,6 @@ main {
     height: auto;
 }
 
-.slider {
-    overflow: hidden;
-}
-
 #small-image {
     display: flex;
 }
@@ -130,10 +126,13 @@ main {
     }
 }
 
+.slider {
+    overflow: hidden;
+}
+
 .slider img {
     animation: move 20s infinite;
     min-width: 100%;
-    width: 100%;
 }
 
 @keyframes move {
