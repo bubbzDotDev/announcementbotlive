@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Roboto Condensed', Verdana, Tahoma, sans-serif;
     letter-spacing: 1px;
     padding: 0px;
@@ -79,7 +79,7 @@ main {
 }
 
 .button {
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: fit-content;
 }
 
@@ -156,7 +156,7 @@ main {
 .commands {
     width: fit-content;
     padding: 0 15px 0 15px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .commands ul {
@@ -174,7 +174,7 @@ main {
 
 .video {
     width: fit-content;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding-bottom: 1rem;
 }
 
@@ -184,6 +184,7 @@ main {
 
 .twitter {
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .twitter img {
