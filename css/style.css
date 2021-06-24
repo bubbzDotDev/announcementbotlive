@@ -165,6 +165,7 @@ main {
 
 .commands li {
     text-align: left;
+    margin: 0.5rem 0;
 }
 
 .commands h3 {
