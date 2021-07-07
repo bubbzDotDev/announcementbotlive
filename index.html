@@ -14,25 +14,31 @@
     <title>Announcement Bot | A bot for Discord!</title>
 </head>
 <body>
-    <header id="top">
-        <div class="slider" id="small-image">
-            <img src="images/banner_addme_sm.png" alt="Banner image for slider">
-            <img src="images/banner_custom_sm.png" alt="Banner image for slider">
-            <img src="images/banner_replace_sm.png" alt="Banner image for slider">
-            <img src="images/banner_normal_sm.png" alt="Banner image for slider">
-        </div>
-        <div class="slider" id="medium-image">
-            <img src="images/banner_addme_md.png" alt="Banner image for slider">
-            <img src="images/banner_custom_md.png" alt="Banner image for slider">
-            <img src="images/banner_replace_md.png" alt="Banner image for slider">
-            <img src="images/banner_normal_md.png" alt="Banner image for slider">
-        </div>
-        <div class="slider" id="large-image">
-            <img src="images/banner_addme.png" alt="Banner image for slider">
-            <img src="images/banner_custom.png" alt="Banner image for slider">
-            <img src="images/banner_replace.png" alt="Banner image for slider">
-            <img src="images/banner_normal.png" alt="Banner image for slider">
-        </div>
+    <header id="top" class="slider">
+        <picture>
+            <source media="(max-width: 519px)" srcset="images/banner_addme_520x158.png">
+            <source media="(max-width: 1279px)" srcset="images/banner_addme_1280x388.png">
+            <source media="(min-width: 1280px)" srcset="images/banner_addme_2100x637.png">
+            <img src="images/banner_addme_2100x637.png"  width="2100" height="637" alt="Announcement Bot: Add me to your Discord server today!">
+        </picture>
+        <picture>
+            <source media="(max-width: 519px)" srcset="images/banner_custom_520x158.png">
+            <source media="(max-width: 1279px)" srcset="images/banner_custom_1280x388.png">
+            <source media="(min-width: 1280px)" srcset="images/banner_custom_2100x637.png">
+            <img src="images/banner_custom_2100x637.png"  width="2100" height="637" alt="Custom Embeds: Create embeds with a live example">
+        </picture>
+        <picture>
+            <source media="(max-width: 519px)" srcset="images/banner_replace_520x158.png">
+            <source media="(max-width: 1279px)" srcset="images/banner_replace_1280x388.png">
+            <source media="(min-width: 1280px)" srcset="images/banner_replace_2100x637.png">
+            <img src="images/banner_replace_2100x637.png"  width="2100" height="637" alt="Replace Your Posts: Easily change outdated posts">
+        </picture>
+        <picture>
+            <source media="(max-width: 519px)" srcset="images/banner_normal_520x158.png">
+            <source media="(max-width: 1279px)" srcset="images/banner_normal_1280x388.png">
+            <source media="(min-width: 1280px)" srcset="images/banner_normal_2100x637.png">
+            <img src="images/banner_normal_2100x637.png"  width="2100" height="637" alt="Normal Announcements: Create non-embedded announcements">
+        </picture>
     </header>
     <nav>
         <p><a href="#commands">&gt; Commands &lt;</a></p>
@@ -85,22 +91,12 @@
                 <li><strong>a!noembed replace</strong> – Replaces an existing message with a regular message</li>
             </ul>
         </section>
-        
-        <h2>Vote</h2>
-        <p id="bfd">
-            <a rel="noopener" href="https://botsfordiscord.com/bots/725281264411869244" target="_blank"><img src="https://botsfordiscord.com/api/bot/725281264411869244/widget" title="Visit Announcement listed on Bots for Discord!" alt="Announcement's Widget Failed to Load" loading="lazy" /></a>
-        </p>
-
-        <section class="video dashed-rounded">
-            <h2>See it in action!</h2>
-            <iframe title="Announcement Bot Demonstration" src="https://player.vimeo.com/video/445335788" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
-        </section>
 
         <div class="twitter">
             <a rel="noopener" href="https://twitter.com/embedondiscord" target="_blank"><img src="images/twitter_logo_blue.png" alt="Twitter Logo" loading="lazy" width="75" height="75"></a>
         </div>
 
-        <p><a href="#top">Back to top</a></p>
+        <p class="back-to-top"><a href="#top">Back to top</a></p>
     </main>
     <footer>
         <a rel="noopener" href="https://www.bubeez.dev" target="_blank"><img src="images/logo_sm_wht_new.png" alt="bubeez development logo" loading="lazy" width="65" height="65"></a>
